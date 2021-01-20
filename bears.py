@@ -2,10 +2,10 @@
 # Takes a number input and checks if it can be manipulated to exactly 42 by the three rules
 def bears(n):
     """Takes an input int and checks if it can win the bear game"""
-    if n == 42:         # Base cases
+    if n == 42:         # Base case of number found
         return True
-    if n < 42:
-        return False
+    if n < 42:          # Base case of number too low to get to 42
+        return False    
         
     isStuck = True      # Set to false if any of the rules are possible
     possible = False    # Set to true if any of the potential routes result in 42

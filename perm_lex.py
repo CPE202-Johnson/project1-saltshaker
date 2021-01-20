@@ -3,9 +3,9 @@
 # and all possible permutations. The input string is assumed to be made of unique, lowercase letters
 def perm_gen_lex(a): 
     """Takes a string input and returns a list of all possible permutations"""
-    if a == '':       # Base case
+    if a == '':         # Deals with no input
         return []
-    if len(a) == 1:
+    if len(a) == 1:     # Base case
         return [a]
         
     perm = []       # List that contains permutations          

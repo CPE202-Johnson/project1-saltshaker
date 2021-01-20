@@ -3,6 +3,7 @@ from  base_convert import *
 
 class TestBaseConvert(unittest.TestCase):
 
+    # Test various numbers for various bases
     def test_base2(self):
         self.assertEqual(convert(45,2),"101101")
         
@@ -23,6 +24,10 @@ class TestBaseConvert(unittest.TestCase):
 
     def test_base16(self):
         self.assertEqual(convert(316,16),"13C")
+        
+    # Tests when input is 0
+    def test_base7(self):
+        self.assertEqual(convert(0,5),"0")
 
 if __name__ == "__main__":
         unittest.main()

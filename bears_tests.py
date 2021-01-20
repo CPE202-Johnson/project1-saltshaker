@@ -2,6 +2,7 @@ import unittest
 from bears import *
 
 class TestAssign1(unittest.TestCase):
+    # Test various numbers
     def test_bear1(self):
         self.assertTrue(bears(250))
 
